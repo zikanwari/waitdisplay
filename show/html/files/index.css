@@ -2,14 +2,20 @@ body {
     background-color: #44546A;
     color: white;
 }
-h1 {
+.title {
     width: 100%;
+    font-size: 90px;
     text-align: center;
+    margin-bottom: 20px;
 }
 #main {
-    height: 65%;
+    min-height: 65%;
     width: 90%;
     background-color: #5B9BD5;
     margin: auto;
-    padding: 70% auto;
+    padding-bottom: 1%;
+    border-radius: 60px;
+}
+#message {
+    margin: 25% auto;
 }
