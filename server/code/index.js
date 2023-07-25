@@ -1,7 +1,7 @@
 const http = require('http');
 const {InfluxDB, Point} = require('@influxdata/influxdb-client')
 
-const token = ''
+const token = process.env.token
 const url = 'http://10.0.0.2:8086'
 
 let org = `lp-cloud`

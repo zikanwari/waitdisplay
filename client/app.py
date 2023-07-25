@@ -4,8 +4,7 @@ import influxdb_client, os
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
-#token = os.environ.get("INFLUXDB_TOKEN")
-token = ''
+token = os.environ.get("token")
 org = "lp-cloud"
 url = "http://10.0.0.2:8086"
 
