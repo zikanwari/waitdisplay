@@ -7,8 +7,7 @@ fetch(`https://api.launchpencil.f5.si/waitdisplay/`, {
         document.getElementById('message').innerHTML = a[0]
         //document.getElementById('message').innerText = 'ここにテキストを入力\nhogehuga'
 
-        //syncstatus(a[1]);
-        syncstatus('75');
+        syncstatus(a[1]);
         
 })
 .catch(error => {
