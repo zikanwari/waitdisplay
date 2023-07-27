@@ -18,6 +18,10 @@ fetch(`https://api.launchpencil.f5.si/waitdisplay/`, {
 
 function syncstatus(percentage) {
     switch (percentage) {
+        case percentage = '25':
+            document.getElementById('status').src = 'images/25.png'
+            document.getElementById('main').style.backgroundColor = '#5b9bd5'
+            break;
         case percentage = '100':
             document.getElementById('status').src = 'images/100.png'
             document.getElementById('main').style.backgroundColor = '#954eca'
@@ -30,11 +34,6 @@ function syncstatus(percentage) {
             document.getElementById('status').src = 'images/50.png'
             document.getElementById('main').style.backgroundColor = '#ED7D31'
             break;
-        case percentage = '25':
-            document.getElementById('status').src = 'images/25.png'
-            document.getElementById('main').style.backgroundColor = '#5b9bd5'
-            break;
-    
         default:
             document.getElementById('status').style.display = 'none'
             document.getElementById('message').style.width = '100%'
