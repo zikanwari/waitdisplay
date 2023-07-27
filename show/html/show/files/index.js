@@ -4,8 +4,8 @@ fetch(`https://api.launchpencil.f5.si/waitdisplay/`, {
 .then(response => response.text())
 .then(data => {
         a = data.split(',');
-        //document.getElementById('message').innerText = a[0]
-        document.getElementById('message').innerText = 'ここにテキストを入力\nhogehuga'
+        document.getElementById('message').innerText = a[0]
+        //document.getElementById('message').innerText = 'ここにテキストを入力\nhogehuga'
 
         syncstatus(a[1]);
         
@@ -35,9 +35,9 @@ function syncstatus(percentage) {
             break;
     
         default:
-            document.getElementById('status').display = 'none'
+            document.getElementById('status').style.display = 'none'
             document.getElementById('message').style.textAlign = 'center'
-            document.getElementById('main').style.backgroundColor = '#A5A5A5    '
+            document.getElementById('main').style.backgroundColor = '#A5A5A5'
             break;
     }
     
