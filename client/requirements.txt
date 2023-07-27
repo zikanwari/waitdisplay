@@ -1,4 +1,4 @@
 streamlit
 requests
-influxdb_client
+influxdb-client
 os
