@@ -35,7 +35,7 @@ function syncstatus(percentage) {
             break;
     
         default:
-            document.getElementById('status').display = 'hidden'
+            document.getElementById('status').display = 'none'
             document.getElementById('message').style.textAlign = 'center'
             document.getElementById('main').style.backgroundColor = '#A5A5A5    '
             break;
